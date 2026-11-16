@@ -99,30 +99,20 @@ public class Main {
 
     private static void opcaoImprimirQRCode(Impressora impressora) {
         String dados = Entrada.lerTexto("Conteúdo do QR Code: ");
-        int tamanho = Entrada.lerInteiro("Tamanho (1 a 6): ", 1, 6);
-        int nivel = Entrada.lerInteiro("Nível de correção (1 a 4): ", 1, 4);
-        impressora.imprimirQRCode(dados, tamanho, nivel);
+        impressora.imprimirQRCode(dados);
     }
 
     private static void opcaoImprimirCodigoBarras(Impressora impressora) {
-        System.out.println("Tipos: 0=UPC-A, 2=EAN13, 3=EAN8, 4=CODE 39, 8=CODE 128");
-        int tipoBarras = Entrada.lerInteiro("Tipo do código de barras: ", 0, 8);
-        String dados = Entrada.lerTexto("Dados do código: ");
-        int altura = Entrada.lerInteiro("Altura (1 a 255): ", 1, 255);
-        int largura = Entrada.lerInteiro("Largura (1 a 6): ", 1, 6);
-        int hri = Entrada.lerInteiro("Número escrito junto (1=acima, 2=abaixo, 3=os dois, 4=não imprime): ", 1, 4);
-        impressora.imprimirCodigoBarras(tipoBarras, dados, altura, largura, hri);
+        impressora.imprimirCodigoBarras();
     }
 
     private static void opcaoImprimirXMLSAT(Impressora impressora) {
-        String caminho = Entrada.lerTexto("Caminho do XML: ");
-        if (caminho.isBlank()) caminho = "XMLSAT.xml";
+        String caminho = "XMLSAT.xml";
         impressora.imprimirXMLSAT(caminho);
     }
 
     private static void opcaoImprimirXMLCancelamento(Impressora impressora) {
-        String caminho = Entrada.lerTexto("Caminho do XML: ");
-        if (caminho.isBlank()) caminho = "CANC_SAT.xml";
+        String caminho = "CANC_SAT.xml";
         impressora.imprimirXMLCancelamentoSAT(caminho);
     }
 

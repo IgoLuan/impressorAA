@@ -111,20 +111,16 @@ public class Impressora {
     }
 
     //Opção 5
-    public void imprimirQRCode(String dados, int tamanho, int nivelCorrecao) {
-        int retorno = ImpressoraDLL.INSTANCE.ImpressaoQRCode(dados, tamanho, nivelCorrecao);
+    public void imprimirQRCode(String dados) {
+        int retorno = ImpressoraDLL.INSTANCE.ImpressaoQRCode(dados, 4, 4);
         if (retornoDLL(retorno, "Impressão do QR Code")) {
             finalizarImpressao();
         }
     }
 
     //Opção 6
-    public void imprimirCodigoBarras(int tipoBarras, String dados, int altura, int largura, int hri) {
-        if (tipoBarras == 8 && !dados.startsWith("{")) {
-            dados = "{A" + dados;
-        }
-
-        int retorno = ImpressoraDLL.INSTANCE.ImpressaoCodigoBarras(tipoBarras, dados, altura, largura, hri);
+    public void imprimirCodigoBarras() {
+        int retorno = ImpressoraDLL.INSTANCE.ImpressaoCodigoBarras(8, "{A12345678912", 100, 2, 3);
         if (retornoDLL(retorno, "Impressão do código de barras")) {
             finalizarImpressao();
         }
@@ -154,7 +150,7 @@ public class Impressora {
 
     //Opção 9
     public void abrirGaveta() {
-        int retorno = ImpressoraDLL.INSTANCE.AbreGaveta(1, 5, 10);
+        int retorno = ImpressoraDLL.INSTANCE.AbreGaveta(1, 5, 5);
         retornoDLL(retorno, "Abertura da gaveta");
     }
 
