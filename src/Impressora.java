@@ -33,8 +33,7 @@ public class Impressora {
     }
 
     private boolean finalizarImpressao() {
-        int retorno = ImpressoraDLL.INSTANCE.AvancaPapel(3);
-        return retornoDLL(retorno, "Avanço do papel");
+        return retornoDLL(ImpressoraDLL.INSTANCE.Corte(5), "Corte do papel");
     }
 
     private String lerArquivoXml(String caminho) {
