@@ -39,8 +39,6 @@ XMLSAT.xml                 → Arquivo SAT
 
 ## ⚙️ Instalação e Execução
 
-*(Escreva o passo a passo para outra pessoa rodar o projeto, como no exemplo abaixo.)*
-
 ### 1. Baixar o projeto
 1. Acesse o repositório no GitHub.
 2. Clique em **Code → Download ZIP**.
@@ -56,23 +54,41 @@ XMLSAT.xml                 → Arquivo SAT
 
 ## 🔐 Login
 
-*(Informe o usuário e a senha de teste e quantas tentativas são permitidas.)*
+- **Usuário:** *admin*
+- **Senha:** *1111*
+- **Quantidade de tentativas:** *3*
 
 ---
 
 ## 📋 Funcionalidades do Menu
 
-| Opção | O que faz |
-|---|---|
-| 1 | *(descreva)* |
-| 2 | *(descreva)* |
-| ... | ... |
+| Opção | O que faz                          |
+|-------|------------------------------------|
+| 1     | *Configurar conexão*               |
+| 2     | *Abrir conexão*                    |
+| 3     | *Fechar conexão*                   |
+| 4     | *Imprimir texto*                   |
+| 5     | *Imprimir QR Code*                 |
+| 6     | *Imprimir código de barras*        |
+| 7     | *Imprimir XML SAT*                 |
+| 8     | *Imprimir XML de cancelamento SAT* |
+| 9     | *Abrir gaveta*                     |
+| 10    | *Sinal sonoro (bip)*               |
+| 11    | *Avançar papel*                    |
+| 12    | *Status do papel*                  |
+| 0     | *Sair*                             |
 
 ---
 
 ## 🧪 Testes Realizados
 
-*(Liste o que você testou e o resultado. Ex.: login com senha errada 3 vezes, impressão de texto, QR Code, código de barras, bip, gaveta.)*
+- Login com senha errada 3 vezes
+- Impressão de texto
+- Impressão de XML SAT
+- Impressão de QR Code
+- Impressão de Código de barras
+- Emissão de Bip
+- Abertura da Gaveta
 
 ---
 
@@ -84,7 +100,7 @@ XMLSAT.xml                 → Arquivo SAT
 ---
 
 ## 👥 Autores
-*(em ordem alfabética)*
 
-- Nome Completo
-- Nome Completo
+- Gabriela Silva dos Santos
+- Luan Igor Oliveira Costa
+- Matheus da Silva Souza
