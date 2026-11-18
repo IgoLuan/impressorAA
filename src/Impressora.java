@@ -33,7 +33,7 @@ public class Impressora {
     }
 
     private boolean finalizarImpressao() {
-        return retornoDLL(ImpressoraDLL.INSTANCE.Corte(5), "Corte do papel");
+        return retornoDLL(ImpressoraDLL.INSTANCE.Corte(4), "Corte do papel");
     }
 
     private String lerArquivoXml(String caminho) {
@@ -155,7 +155,7 @@ public class Impressora {
 
     //Opção 10
     public void sinalSonoro(int quantidade) {
-        int retorno = ImpressoraDLL.INSTANCE.SinalSonoro(quantidade, 50, 5);
+        int retorno = ImpressoraDLL.INSTANCE.SinalSonoro(quantidade, 20, 5);
         if (retorno == 0) {
             System.out.println("Bip! (" + quantidade + "x)");
         } else {

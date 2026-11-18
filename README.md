@@ -4,7 +4,7 @@
 
 ## 📘 Sobre o Projeto
 
-*Este projeto foi desenvolvido por Gabriela, Matheus e Luan para realizar operações de impressão por meio de uma impressora térmica. O sistema permite ao usuário interagir com a impressora por meio do terminal, com diferentes funcionalidades. O projeto foi desenvolvido como atividade da disciplina de **Programação Orientada a Objetos (POO).***
+*Este projeto foi desenvolvido por Gabriela, Matheus e Luan para realizar operações de impressão por meio de uma impressora térmica. O sistema permite ao usuário interagir com a impressora por meio do terminal, com diferentes funcionalidades. O projeto foi desenvolvido como atividade da disciplina de **Programação Orientada a Objetos (POO)** do curso técnico com habilitação em T.I*
 
 ---
 
@@ -95,7 +95,7 @@ XMLSAT.xml                 → Arquivo SAT
 ## 📚 Documentação Adicional
 
 - Manual da impressora Elgin
-- Documentação do SDK E1_Impressora
+- Documentação do SDK E1_Impressora: https://elgindevelopercommunity.github.io/group___m1.html
 
 ---
 
